@@ -1,44 +1,654 @@
 format-version: 1.2
 data-version: releases/2016-08-24
-remark: Fungal Anatomy Ontology
-import: http://purl.obolibrary.org/obo/fao/imports/caro_import.owl
-import: http://purl.obolibrary.org/obo/fao/imports/ro_import.owl
+date: 31:01:2014 05:42
+saved-by: dinglis
+auto-generated-by: OBO-Edit 2.1-beta1
+default-namespace: fungal_anatomy_ontology
+namespace-id-rule: * FAO:$sequence(7,0000001,9999999)$
+remark: version: $Revision: 1.7 $
 ontology: fao
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/FAO_00000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000003> (occurrent)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/FAO_00000000> (fao)\n\nSubClassOf(<http://purl.obolibrary.org/obo/FAO_00000000> owl:Thing)\n\n\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/FAO_0000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/FAO_0000005>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/FAO_0000001> (fungal structure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/FAO_0000001> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/FAO_0000005> (obsolete)\n\nSubClassOf(<http://purl.obolibrary.org/obo/FAO_0000005> owl:Thing)\n\n\n)
 
 [Term]
-id: BFO:0000004 ! independent continuant
-is_a: BFO:0000002 ! continuant
+id: FAO:0000001
+name: fungal structure
+synonym: "fungal structure ontology" RELATED []
 
 [Term]
-id: BFO:0000015 ! process
-is_a: BFO:0000003 ! occurrent
+id: FAO:0000002
+name: composite structure
+def: "A multicellular formation composed of cells from more than one species." [FAO:curators, SGD:clt]
+synonym: "multispecific structure" RELATED []
+is_a: FAO:0000001 ! fungal structure
 
 [Term]
-id: BFO:0000040 ! material entity
-is_a: BFO:0000004 ! independent continuant
+id: FAO:0000003
+name: basidium
+def: "A structure directly from which spores are formed following sexual reproduction in a Basidiomycete." [FAO:curators, ISBN:0471940526]
+is_a: FAO:0000052 ! sporangium
+relationship: part_of FAO:0000012 ! basidiocarp
 
 [Term]
-id: CARO:0000003 ! anatomical structure
-is_a: CARO:0000006 ! material anatomical entity
+id: FAO:0000004
+name: ascocarp-bound ascus
+def: "An ascus that is associated with an ascocarp." [FAO:curators]
+is_a: FAO:0000014 ! ascus
+relationship: part_of FAO:0000008 ! ascocarp
 
 [Term]
-id: CARO:0000006 ! material anatomical entity
-is_a: BFO:0000040 ! material entity
+id: FAO:0000005
+name: obsolete
+def: "The placeholder class 'obsolete' has been made obsolete, as this is not tracked with an explicit obsoletion flag in obo format." [FAO:curators]
+is_obsolete: true
 
 [Term]
-id: CL:0000000 ! cell
-is_a: CARO:0000003 ! anatomical structure
+id: FAO:0000006
+name: stipe
+def: "A stalk or stem; composed of hyphae arrayed parallel to the long axis of the structure; a stipe may be a single supporting hypha." [ISBN:0471940526, SGD:clt]
+synonym: "stem" RELATED []
+relationship: part_of FAO:0000012 ! basidiocarp
 
 [Term]
-id: CL:0000540 ! neuron
-is_a: CL:0000000 ! cell
+id: FAO:0000007
+name: fruitbody
+def: "Any specialized structure which bears or contains sexually or asexually derived spores." [FAO:curators, SGD:clt]
+synonym: "fruiting body" RELATED []
+is_a: FAO:0000001 ! fungal structure
 
 [Term]
-id: FAO:00000000
-name: fao
+id: FAO:0000008
+name: ascocarp
+def: "A structure within which or at the surface of, an ascus develops in Ascomycetes." [ISBN:0471940526]
+is_a: FAO:0000007 ! fruitbody
 
 [Term]
-id: GO:0008150 ! biological_process
-is_a: BFO:0000015 ! process
+id: FAO:0000009
+name: pileus
+def: "The structure on which the spore-bearing tissue is carried in sexually-derived fruiting bodies." [ISBN:0471940526]
+synonym: "cap" RELATED []
+relationship: part_of FAO:0000012 ! basidiocarp
+
+[Term]
+id: FAO:0000010
+name: sporophore
+def: "A structure directly within which spores are contained or from which spores are formed." [FAO:curators]
+synonym: "spore-bearing organ" RELATED []
+xref: GO:0075259
+is_a: FAO:0000001 ! fungal structure
+
+[Term]
+id: FAO:0000011
+name: mycelium
+def: "A group or mass of discrete hyphae; the vegetative structure of many fungi." [ISBN:0471940526]
+is_a: FAO:0000001 ! fungal structure
+
+[Term]
+id: FAO:0000012
+name: basidiocarp
+def: "A structure at the surface of which, or within, basidia and basidiospores develop in Basidiomycetes; site of karyogamy and meiosis." [ISBN:0471940526]
+synonym: "mushroom" RELATED []
+is_a: FAO:0000007 ! fruitbody
+
+[Term]
+id: FAO:0000013
+name: ascospore in ascocarp-bound ascus
+def: "A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete that is contained in an ascus associated with an ascocarp." [FAO:curators]
+is_a: FAO:0000020 ! ascospore
+relationship: part_of FAO:0000004 ! ascocarp-bound ascus
+
+[Term]
+id: FAO:0000014
+name: ascus
+def: "A sac-like structure containing sexual spores formed by Ascomycotina; mature asci may have little or no cytoplasm or cytoplasmic contents, and no nucleus outside of the spores." [SGD:clt]
+is_a: FAO:0000052 ! sporangium
+
+[Term]
+id: FAO:0000015
+name: free ascus
+def: "An ascus that is not associated with an ascocarp and is usually derived from a single cell." [FAO:curators]
+is_a: FAO:0000014 ! ascus
+
+[Term]
+id: FAO:0000016
+name: ascospore in free ascus
+def: "A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete that is contained in an ascus not associated with an ascocarp." [FAO:curators]
+is_a: FAO:0000020 ! ascospore
+relationship: part_of FAO:0000015 ! free ascus
+
+[Term]
+id: FAO:0000017
+name: sexual spore
+def: "A spore formed following meiosis. Sometimes following meiosis, prospores may undergo one or more rounds of mitosis before they are fully mature." [SGD:clt]
+synonym: "meiotically-derived spore" RELATED []
+is_a: FAO:0000019 ! spore
+
+[Term]
+id: FAO:0000018
+name: unicellular structure
+def: "An individual cell composed of a plasma membrane, contents internal to the plasma membrane, and any external protective or encapsulating structure." [FAO:curators, SGD:clt]
+synonym: "cell" EXACT []
+is_a: FAO:0000001 ! fungal structure
+
+[Term]
+id: FAO:0000019
+name: spore
+def: "A differentiated form of an organism produced during or as a result of an asexual or sexual reproductive process; usually a cell with a thick cell wall that stores and protects one or more nuclei. Spores may be produced in response to, and are characteristically resistant to, adverse environmental conditions." [ISBN:0471940526]
+is_a: FAO:0000018 ! unicellular structure
+
+[Term]
+id: FAO:0000020
+name: ascospore
+def: "A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete." [SGD:clt]
+is_a: FAO:0000017 ! sexual spore
+
+[Term]
+id: FAO:0000021
+name: basidiospore
+def: "A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Basidiomycete; formed externally on extrusions of the basidium." [ISBN:0471940526, SGD:clt]
+is_a: FAO:0000017 ! sexual spore
+relationship: part_of FAO:0000003 ! basidium
+
+[Term]
+id: FAO:0000022
+name: teliospore
+def: "A spore with a very thick cell wall and extracellular peptidoglycan spikes that stores and protects one or more nuclei during dormancy in a Basidiomycete." [SGD:clt]
+is_a: FAO:0000021 ! basidiospore
+
+[Term]
+id: FAO:0000023
+name: asexual spore
+def: "A spore formed following mitosis or mitoses." [PMID:2524423, PMID:9529886, SGD:clt]
+synonym: "mitotically-derived spore" RELATED []
+is_a: FAO:0000019 ! spore
+
+[Term]
+id: FAO:0000024
+name: conidium
+def: "An asexual, nonmotile spore formed by higher fungi; conidia are usually made from the side or tip of specialized sporogenous cells and do not form by progressive cleavage of the cytoplasm." [PMID:2524423, PMID:9529886, SGD:clt]
+is_a: FAO:0000023 ! asexual spore
+
+[Term]
+id: FAO:0000025
+name: uninucleate conidium
+def: "A conidium that has only one nucleus." [SGD:clt]
+is_a: FAO:0000024 ! conidium
+
+[Term]
+id: FAO:0000026
+name: uredospore
+def: "A thick walled spore that stores and protects one or more nuclei during dispersal following reproduction in an Basidiomycete." [SGD:clt]
+synonym: "urediniospore" RELATED []
+synonym: "urediospore" RELATED []
+is_a: FAO:0000021 ! basidiospore
+
+[Term]
+id: FAO:0000027
+name: conidium of conidiophore head
+def: "A uninucleate spore formed on specialized cells or projections, sterigma, of a conidiophore head." [PMID:9529886, SGD:clt]
+is_a: FAO:0000025 ! uninucleate conidium
+
+[Term]
+id: FAO:0000028
+name: microconidium
+def: "The smaller of two types of asexual spores formed by some fungi. An ovoid to pear-shaped asexual spore that contains very little cytoplasm and organelles, is uninucleate, and forms in vegetative hypae within a mycelium. Micronidia are extruded from the hyphal cell wall." [ISBN:0471940526, PMID:8357339, SGD:clt]
+is_a: FAO:0000025 ! uninucleate conidium
+
+[Term]
+id: FAO:0000029
+name: uninucleate macroconidium
+def: "A macroconidium that has only one nucleus." [SGD:clt]
+is_a: FAO:0000025 ! uninucleate conidium
+is_a: FAO:0000038 ! macroconidium
+
+[Term]
+id: FAO:0000030
+name: uninucleate blastoconidium
+def: "A blastoconidium that has only one nucleus." [SGD:clt]
+is_a: FAO:0000029 ! uninucleate macroconidium
+is_a: FAO:0000042 ! blastoconidium
+
+[Term]
+id: FAO:0000031
+name: uninucleate arthroconidium
+def: "An arthroconidium that has only one nucleus." [SGD:clt]
+is_a: FAO:0000029 ! uninucleate macroconidium
+is_a: FAO:0000041 ! arthroconidium
+
+[Term]
+id: FAO:0000032
+name: vegetative cell
+def: "A single cell where nutrition and growth predominate, as opposed to cells that are undergoing sexual processes." [ISBN:0471940526, SGD:clt]
+synonym: "yeast-form" RELATED []
+is_a: FAO:0000018 ! unicellular structure
+
+[Term]
+id: FAO:0000033
+name: multinucleate conidium
+def: "A conidium that has more than one nucleus." [SGD:clt]
+is_a: FAO:0000024 ! conidium
+
+[Term]
+id: FAO:0000034
+name: lichen thallus
+def: "A multicellular structure composed of multiple species; minimally composed of an alga or cyanobacterium and a fungus." [ISBN:0471940526, SGD:clt]
+is_a: FAO:0000002 ! composite structure
+
+[Term]
+id: FAO:0000035
+name: multinucleate macroconidium
+def: "A macroconidium that has more than one nucleus." [SGD:clt]
+is_a: FAO:0000033 ! multinucleate conidium
+is_a: FAO:0000038 ! macroconidium
+
+[Term]
+id: FAO:0000036
+name: multinucleate blastoconidium
+def: "A blastoconidium that has more than one nucleus." [SGD:clt]
+is_a: FAO:0000035 ! multinucleate macroconidium
+is_a: FAO:0000042 ! blastoconidium
+
+[Term]
+id: FAO:0000037
+name: multinucleate arthroconidium
+def: "An arthroconidium that has more than one nucleus." [SGD:clt]
+is_a: FAO:0000035 ! multinucleate macroconidium
+is_a: FAO:0000041 ! arthroconidium
+
+[Term]
+id: FAO:0000038
+name: macroconidium
+def: "The larger of two types of asexual spores formed by some fungi; usually round or oblong." [ISBN:0471940526, SGD:clt]
+is_a: FAO:0000024 ! conidium
+
+[Term]
+id: FAO:0000039
+name: oospore
+def: "An asexual spore formed by Oomycetes; formed upon fertilization of an oosphere." [ISBN:0851988857, SGD:clt]
+is_a: FAO:0000023 ! asexual spore
+
+[Term]
+id: FAO:0000040
+name: zygospore
+def: "A thick walled, sexual, resting spore formed by Zygomycetes; sometimes refers to the spore and the multi-layered cell wall that encloses the spore, the zygosporangium." [ISBN:0471940526, SGD:clt]
+is_a: FAO:0000017 ! sexual spore
+
+[Term]
+id: FAO:0000041
+name: arthroconidium
+def: "Cylindrical spore formed by development and compartmentation of hyphae; the hyphae are often supporting blastoconidiophores." [PMID:2524423, SGD:clt]
+synonym: "arthrospore" RELATED []
+is_a: FAO:0000038 ! macroconidium
+
+[Term]
+id: FAO:0000042
+name: blastoconidium
+def: "An oblong or round asexual reproductive spore formed specifically by budding." [CGD:doi, PMID:2524423, SGD:clt]
+synonym: "blastospore" RELATED []
+synonym: "reproductive blastospore" RELATED []
+xref: GO:0034299
+is_a: FAO:0000038 ! macroconidium
+
+[Term]
+id: FAO:0000043
+name: conidiophore
+def: "A specialized hypha, often aerial, that gives rise to asexual spores, known as conidia." [AspGD:mcc, ISBN:0471522295, PMID:9529886]
+relationship: develops_from FAO:0001001 ! hypha
+
+[Term]
+id: FAO:0000044
+name: sterigma
+def: "A small hyphal branch or structure which supports a sporangium, a conidium, or a basidiospore. In species with biseriate (two layered) sterigmata such as A. nidulans, the first layer comprises primary sterigmata (metulae) and the second layer secondary sterigmata (phialides). Some species, e.g. A. fumigatus, A. oryzae, and others, have only phialides." [AspGD:mcc, ISBN:0471522295]
+synonym: "sterigmata (plural)" EXACT []
+relationship: part_of FAO:0000043 ! conidiophore
+
+[Term]
+id: FAO:0000045
+name: phialide
+def: "A specialized cell that buds from a metula on a developing conidiophore. Multiple phialides may bud from each metula. The phialides in turn divide asymmetrically to give rise to chains of conidia." [AspGD:mcc, PMID:9529886]
+synonym: "secondary sterigma" EXACT []
+is_a: FAO:0000044 ! sterigma
+
+[Term]
+id: FAO:0000046
+name: metula
+def: "A specialized cell borne on a conidiophore that gives rise to phialides during the process of conidiation." [AspGD:mcc, PMID:9529886]
+synonym: "metulae (plural)" EXACT []
+synonym: "primary sterigma" EXACT []
+is_a: FAO:0000044 ! sterigma
+
+[Term]
+id: FAO:0000047
+name: cleistothecium
+def: "A completely closed fruiting body formed by some fungi of the Ascomycota, containing asci." [AspGD:mcc, ISBN:0471522295]
+is_a: FAO:0000008 ! ascocarp
+
+[Term]
+id: FAO:0000048
+name: Hulle cell
+def: "A specialized multinucleate cell that originates from a nest-like aggregation of hyphae during sexual development. Hulle cells serve as nurse cells to the developing cleistothecium. Note that \"Hulle\" is properly written with an umlaut character on the \"u\"." [AspGD:mcc, PMID:19210625]
+relationship: develops_from FAO:0001001 ! hypha
+
+[Term]
+id: FAO:0000049
+name: conidiophore vesicle
+def: "The swollen region at the apex of a conidiophore, bearing multiple metulae." [AspGD:mcc, PMID:9529886]
+relationship: part_of FAO:0000043 ! conidiophore
+
+[Term]
+id: FAO:0000050
+name: conidiophore stalk
+def: "The elongated part of the conidiophore that extends, often aerially, from the growth substrate and supports the structures that bear conidia." [AspGD:mcc, PMID:9529886]
+relationship: part_of FAO:0000043 ! conidiophore
+
+[Term]
+id: FAO:0000051
+name: oidium
+def: "Oidia are borne a few at a time on very simple hyphae that protrude a short distance into the substrate, and are usually presumed not to constitute the main reproductive strategy of the fungus." [Wikipedia:Oidium]
+xref: GO:0034297
+relationship: part_of FAO:0001001 ! hypha
+created_by: Maria
+creation_date: 2011-06-10T12:03:49Z
+
+[Term]
+id: FAO:0000052
+name: sporangium
+def: "A structure within which spores develop." [FAO:curators]
+xref: GO:0043582
+is_a: FAO:0000010 ! sporophore
+created_by: Maria
+creation_date: 2011-06-10T12:06:16Z
+
+[Term]
+id: FAO:0000053
+name: zygosporangium
+def: "A zygosporangium is a thick-walled structure in which spores are produced, and is characteristic of the Zygomycetes." [FAO:curators]
+xref: GO:0075271
+is_a: FAO:0000052 ! sporangium
+created_by: Maria
+creation_date: 2011-06-10T12:14:19Z
+
+[Term]
+id: FAO:0000054
+name: aeciospore
+def: "A dikaryotic spore, typically of a rust fungus, that is produced in an aecium; in heteroecious rusts, the aeciospore is a spore stage that infects the alternate host." [FAO:curators]
+xref: GO:0075247
+is_a: FAO:0000023 ! asexual spore
+created_by: Maria
+creation_date: 2011-06-10T12:18:12Z
+
+[Term]
+id: FAO:0000055
+name: aplanospore
+def: "A nonmotile, asexual spore, usually a sporangiospore, common in the Phycomycetes." [answers.com:aplanospore, FAO:curators]
+xref: GO:0075289
+is_a: FAO:0000023 ! asexual spore
+created_by: Maria
+creation_date: 2011-06-10T12:21:58Z
+
+[Term]
+id: FAO:0000056
+name: aecium
+def: "A cuplike structure of some rust fungi that contains chains of aeciospores." [FAO:curators]
+xref: GO:0075267
+is_a: FAO:0000010 ! sporophore
+created_by: Maria
+creation_date: 2011-06-10T02:45:15Z
+
+[Term]
+id: FAO:0000057
+name: telium
+def: "A teliospore-bearing sorus of the rust fungi. A pustule-like sorus formed on the tissue of a plant infected by a rust fungus and producing teliospores." [FAO:curators]
+xref: GO:0075275
+is_a: FAO:0000010 ! sporophore
+created_by: Maria
+creation_date: 2011-06-10T02:47:39Z
+
+[Term]
+id: FAO:0000058
+name: uredinium
+def: "A reddish, pustule-like structure formed by a rust fungus and consisting of uredospores." [FAO:curators]
+xref: GO:0075279
+is_a: FAO:0000010 ! sporophore
+created_by: Maria
+creation_date: 2011-06-10T02:49:08Z
+
+[Term]
+id: FAO:0000059
+name: conjugation tube
+def: "A tubular structure that connects two individuals during conjugation (usually forming in response to pheromone) and through which the transfer of genetic material can occur. (http://science.yourdictionary.com/conjugation-tube)" [CGD:doi]
+is_a: FAO:0001022 ! mating cell
+created_by: mariacostanzo
+creation_date: 2013-04-02T03:23:27Z
+
+[Term]
+id: FAO:0000060
+name: clamp cell
+def: "A hyphal cell that forms a clamp connection, a structure that separates differing nuclei, which have been obtained through mating of hyphae of differing sexual types, into distinct hyphal segments that are separated by septa (cross walls)." [CGD:doi]
+is_a: FAO:0001009 ! septate hypha
+created_by: mariacostanzo
+creation_date: 2013-04-02T03:28:00Z
+
+[Term]
+id: FAO:0000061
+name: fused clamp
+def: "A structure produced in a dikaryotic hypha upon migration of the nuclei after mating of hyphae of differing sexual types.  The clamp fuses to compartmentalize a nucleus within the subapical cell.  Note: A hyphal cell that forms a clamp connection is called a \"clamp cell\"." [CGD:doi]
+relationship: part_of FAO:0000060 ! clamp cell
+created_by: mariacostanzo
+creation_date: 2013-04-02T03:29:16Z
+
+[Term]
+id: FAO:0000062
+name: unfused clamp
+def: "A structure that separates the nuclei within monokaryotic hyphae into distinct hyphal segments.   Monokaryotic hyphae are produced during unisexual reproduction or hyphal development of a diploid, in contrast to dikaryotic hyphae which are produced by mating of hyphae of differing sexual types." [CGD:doi]
+relationship: part_of FAO:0000060 ! clamp cell
+created_by: mariacostanzo
+creation_date: 2013-04-02T03:31:28Z
+
+[Term]
+id: FAO:0000063
+name: titan cell
+def: "Large cells produced by fungi, such as Cryptococcus neoformans, that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [CGD:doi, PMID:21821718]
+is_a: FAO:0000032 ! vegetative cell
+created_by: mariacostanzo
+creation_date: 2013-04-03T11:15:35Z
+
+[Term]
+id: FAO:0000064
+name: ballistospore
+def: "A forcibly discharged asexual spore. With fungi, most types of basidiospores formed on basidia are discharged into the air from the tips of sterigmata." [CGD:doi]
+synonym: "ballistoconidium" EXACT []
+is_a: FAO:0000023 ! asexual spore
+created_by: mariacostanzo
+creation_date: 2013-04-03T11:18:18Z
+
+[Term]
+id: FAO:0000065
+name: dikaryon
+def: "The dikaryon is a cell pair observed in some fungi, within which two compatible nuclei of two cells pair off after plasmogamy and cohabit without karyogamy within a hyphal compartment, synchronously dividing such that pairs are maintained in the older cells and newer cells or hyphal tips are also binucleate. (http://en.wikipedia.org/wiki/Dikaryon)" [CGD:doi]
+relationship: part_of FAO:0001001 ! hypha
+created_by: mariacostanzo
+creation_date: 2013-04-03T11:20:00Z
+
+[Term]
+id: FAO:0000066
+name: haustorium
+def: "The appendage or portion of a commensal or parasitic fungus (the hyphal tip) that penetrates the host's tissue and draws nutrients from it. Haustoria may arise from intercellular hyphae, appressoria, or external hyphae." [CGD:doi]
+is_a: FAO:0001011 ! hyphal tip
+created_by: mariacostanzo
+creation_date: 2013-04-03T11:21:38Z
+
+[Term]
+id: FAO:0000067
+name: chlamydospore
+def: "A large, thick-walled resting spore produced by several kinds of fungi." [CGD:doi]
+is_a: FAO:0000023 ! asexual spore
+created_by: mariacostanzo
+creation_date: 2013-04-03T11:41:14Z
+
+[Term]
+id: FAO:0001001
+name: hypha
+def: "A threadlike, tubular filamentous fungal structure." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0000001 ! fungal structure
+
+[Term]
+id: FAO:0001002
+name: pseudohypha
+def: "A chain of cells, formed under specific growth conditions, in which yeast-form fungal cells become elongated, bud only at the cellular pole distal to the mother cell, and fail to separate after division. Pseudohyphae exhibit constrictions at the cell-cell junctions, in contrast to true hyphae which are of more uniform diameter." [FAO:mcc]
+is_a: FAO:0000001 ! fungal structure
+
+[Term]
+id: FAO:0001003
+name: hypha in mycelium
+def: "A threadlike, tubular filamentous fungal structure, existing as part of a group or mass of such structures, the mycelium." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001001 ! hypha
+relationship: part_of FAO:0000011 ! mycelium
+
+[Term]
+id: FAO:0001004
+name: septate hypha in mycelium
+def: "A hypha that is divided internally by septa, or lateral cell walls, that exists as part of a group or mass of such structures, the mycelium." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001003 ! hypha in mycelium
+is_a: FAO:0001009 ! septate hypha
+
+[Term]
+id: FAO:0001005
+name: rhizomorph
+def: "A thick strand of hyphae oriented in parallel to each other, with a central channel through which nutrients are conducted." [FAO:clt, ISBN:0632030771]
+is_a: FAO:0000011 ! mycelium
+
+[Term]
+id: FAO:0001006
+name: mycelial cord
+def: "A thick strand of hyphae, oriented in parallel to each other, with specialized channels through which nutrients are conducted." [FAO:clt, ISBN:0632030771]
+is_a: FAO:0000011 ! mycelium
+
+[Term]
+id: FAO:0001007
+name: stroma
+def: "A compact hyphal mass, on or in which fruiting bodies are formed." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0000011 ! mycelium
+
+[Term]
+id: FAO:0001008
+name: sclerotium
+def: "A mycelial resting body, resistant to adverse environmental conditions." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0000011 ! mycelium
+
+[Term]
+id: FAO:0001009
+name: septate hypha
+def: "A hypha that is divided internally by septa, or lateral cell walls." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001001 ! hypha
+
+[Term]
+id: FAO:0001010
+name: aseptate hypha
+def: "A hypha whose growing portion contains multiple nuclei but is not divided internally by septa, or lateral cell walls. Septa may be present in older portions of the hypha, or at the base of reproductive structures." [FAO:mcc, ISBN:0471522295]
+synonym: "coenocytic hypha" RELATED []
+xref: FAO:mcc
+is_a: FAO:0001001 ! hypha
+
+[Term]
+id: FAO:0001011
+name: hyphal tip
+def: "The growing end of a hypha." [FAO:mcc, ISBN:0471522295]
+relationship: part_of FAO:0001001 ! hypha
+
+[Term]
+id: FAO:0001012
+name: hyphal tip, hypha in mycelium
+def: "The growing end of a hypha existing as a part of a mass or group of hyphae, the mycelium." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001011 ! hyphal tip
+relationship: part_of FAO:0001003 ! hypha in mycelium
+
+[Term]
+id: FAO:0001013
+name: hypha with dolipore septa, in mycelium
+def: "Hypha containing dolipore septa, or cross-walls, containing a central pore around which the septum is swollen to form a barrel-shaped structure; existing as part of a group or mass of similar hyphae, or mycelium." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001004 ! septate hypha in mycelium
+
+[Term]
+id: FAO:0001014
+name: aseptate hypha in mycelium
+def: "A hypha whose growing portion contains multiple nuclei but is not divided internally by septa, or lateral cell walls; existing as part of a mass or group of such hyphae, the mycelium." [FAO:mcc, ISBN:0471522295]
+synonym: "coenocytic hypha in mycelium" RELATED []
+xref: FAO:mcc
+is_a: FAO:0001003 ! hypha in mycelium
+is_a: FAO:0001010 ! aseptate hypha
+
+[Term]
+id: FAO:0001015
+name: hyphal tip, septate hypha in mycelium
+def: "The growing end of a hypha that is divided internally by septa, or lateral cell walls, existing as part of a group or mass of such hyphae, the mycelium." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001012 ! hyphal tip, hypha in mycelium
+is_a: FAO:0001016 ! hyphal tip, septate hypha
+relationship: part_of FAO:0001004 ! septate hypha in mycelium
+
+[Term]
+id: FAO:0001016
+name: hyphal tip, septate hypha
+def: "The growing end of a hypha that is divided internally by septa, or lateral cell walls." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001011 ! hyphal tip
+relationship: part_of FAO:0001009 ! septate hypha
+
+[Term]
+id: FAO:0001017
+name: hyphal tip, hypha with dolipore septa in mycelium
+def: "The growing end of a hypha that is divided internally by dolipore septa, existing as part of a group or mass of such hyphae, the mycelium." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001015 ! hyphal tip, septate hypha in mycelium
+is_a: FAO:0001019 ! hyphal tip, hypha with dolipore septa
+relationship: part_of FAO:0001013 ! hypha with dolipore septa, in mycelium
+
+[Term]
+id: FAO:0001018
+name: hypha with dolipore septa
+def: "Hypha containing dolipore septa, or cross-walls; septa contain a central pore around which the septum is swollen to form a barrel-shaped structure; pore is covered on each side of the septum by a septal pore cap (parenthosome)." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001009 ! septate hypha
+
+[Term]
+id: FAO:0001019
+name: hyphal tip, hypha with dolipore septa
+def: "The growing end of a hypha that is divided internally by septa, or cross-walls, of the dolipore type." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001016 ! hyphal tip, septate hypha
+relationship: part_of FAO:0001018 ! hypha with dolipore septa
+
+[Term]
+id: FAO:0001020
+name: hyphal tip, aseptate hypha in mycelium
+def: "The growing tip of a hypha whose growing portion is not divided internally by septa, or lateral cell walls, existing as part of a group or mass of such hyphae, the mycelium." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001012 ! hyphal tip, hypha in mycelium
+is_a: FAO:0001021 ! hyphal tip, aseptate hypha
+relationship: part_of FAO:0001014 ! aseptate hypha in mycelium
+
+[Term]
+id: FAO:0001021
+name: hyphal tip, aseptate hypha
+def: "The growing end of a hypha that is not divided internally by septa, or cross-walls." [FAO:mcc, ISBN:0471522295]
+is_a: FAO:0001011 ! hyphal tip
+relationship: part_of FAO:0001010 ! aseptate hypha
+
+[Term]
+id: FAO:0001022
+name: mating cell
+def: "A cell engaged in or about to engage in the process of mating; exhibits different morphology from a vegetative cell due to the action of mating pheromones." [FAO:mcc]
+is_a: FAO:0000018 ! unicellular structure
+
+[Term]
+id: FAO:0001023
+name: shmoo
+def: "An elongated, asymmetric cell formed before mating, in response to mating pheromone, by Saccharomyces species and other fungi with similar life cycles. Named after the Al Capp cartoon character, whose shape it resembles." [FAO:mcc, ISBN:0879693798]
+is_a: FAO:0001022 ! mating cell
+
+[Typedef]
+id: develops_from
+name: develops from
+xref: RO:0002202
+is_transitive: true
+
+[Typedef]
+id: part_of
+name: part of
+xref: BFO:0000050
+is_transitive: true
 
