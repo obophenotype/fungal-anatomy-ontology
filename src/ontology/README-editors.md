@@ -10,11 +10,11 @@ Make sure you have an ID range in the [idranges file](fao-idranges.owl)
 
 If you do not have one, get one from the head curator.
 
-The editors version is [fao-edit.owl](fao-edit.owl)
+The editors version is [fao-edit.obo](fao-edit.obo)
 
 ** DO NOT EDIT fao.obo OR fao.owl in the top level directory **
 
-[../../fao.owl] is the release version
+[../../fao.owl] and [../../fao.obo] are the release versions
 
 To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/obophenotype/fungal-anatomy-ontology) for details.
 
