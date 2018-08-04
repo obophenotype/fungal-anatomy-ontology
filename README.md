@@ -32,5 +32,9 @@ Editors of this ontology should use the edit version, [src/ontology/fao-edit.obo
 Note that if you are not an editor, you should use the stable release version
 
 ## Contact
+
 Please use this GitHub repository's [Issue tracker](https://github.com/obophenotype/fungal-anatomy-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
+## Acknowledgements
+
+This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
