@@ -11,6 +11,7 @@ ontology: fao
 id: FAO:0000001
 name: fungal structure
 synonym: "fungal structure ontology" RELATED []
+xref: BTO:0001494
 
 [Term]
 id: FAO:0000002
