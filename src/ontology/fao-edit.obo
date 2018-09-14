@@ -638,6 +638,98 @@ name: shmoo
 def: "An elongated, asymmetric cell formed before mating, in response to mating pheromone, by Saccharomyces species and other fungi with similar life cycles. Named after the Al Capp cartoon character, whose shape it resembles." [FAO:mcc, ISBN:0879693798]
 is_a: FAO:0001022 ! mating cell
 
+[Term]
+id: FAO:0001024
+name: basidiocarp
+def: "The large fruiting body characteristic of the majority of fungi of the subphylum Basidiomycotina; it is composed of masses of intertwined hyphal elements and produces basidia. Mushrooms and toadstools are common examples." [BTO:0000114]
+xref: BTO:0000114
+is_a: FAO:0000007 {source="BTO:0000114"} ! fruitbody
+
+[Term]
+id: FAO:0001025
+name: mycelial felt
+def: "Mass of hyphae, usually in wood or bark; visible with the naked eye." [BTO:0000890]
+xref: BTO:0000890
+is_a: FAO:0000011 {source="BTO:0000890"} ! mycelium
+
+[Term]
+id: FAO:0001026
+name: mycobiont
+def: "The fungal component of the lichen partnership, absorbing nutrients and providing structural support for the plant." [BTO:0000892]
+xref: BTO:0000892
+is_a: FAO:0000001 {source="BTO:0000892"} ! fungal structure
+
+[Term]
+id: FAO:0001027
+name: mycorrhiza
+def: "The symbiotic association of the mycelium of a fungus with the roots of a seed plant." [BTO:0000893]
+xref: BTO:0000893
+is_a: FAO:0000001 {source="BTO:0000893"} ! fungal structure
+
+[Term]
+id: FAO:0001028
+name: sorocarp
+def: "Fruiting body formed by some cellular slime moulds; has both stalk and spore-mass." [BTO:0001098]
+xref: BTO:0001098
+is_a: FAO:0000007 {source="BTO:0001098"} ! fruitbody
+
+[Term]
+id: FAO:0001029
+name: pseudoplasmodium
+def: "A multinucleate plasmodium-like body formed by aggregation of myxamoebae without fusion of their protoplasm." [BTO:0001139]
+xref: BTO:0001139
+is_a: FAO:0000001 {source="BTO:0001139"} ! fungal structure
+
+[Term]
+id: FAO:0001031
+name: aerial mycelium
+def: "Hyphal elements growing above the agar surface." [BTO:0001562]
+xref: BTO:0001562
+is_a: FAO:0000011 {source="BTO:0001562"} ! mycelium
+
+[Term]
+id: FAO:0001034
+name: apothecium
+def: "An open or expanded fruiting body seen in lichens and actinomycetous fungi, having asci contained on its exposed surface." [BTO:0002160]
+xref: BTO:0002160
+is_a: FAO:0000008 {source="BTO:0002160"} ! ascocarp
+
+[Term]
+id: FAO:0001035
+name: gymnothecium
+def: "A type of fruiting body (ascocarp) composed of a loose network of mycelia through which ascospores filter and are released at maturity; its reproductive organs are in the form of naked asci. Seen in fungi of the family Gymnoascaceae." [BTO:0002163]
+xref: BTO:0002163
+is_a: FAO:0000008 {source="BTO:0002163"} ! ascocarp
+
+[Term]
+id: FAO:0001036
+name: perithecium
+def: "The flask-shaped fruiting body of certain molds and ascomycetous fungi having a pore for the escape of spores." [BTO:0002164]
+xref: BTO:0002164
+is_a: FAO:0000008 {source="BTO:0002164"} ! ascocarp
+
+[Term]
+id: FAO:0001051
+name: germ tube
+def: "A germ tube is an outgrowth produced by certain species of spore-releasing fungi (sporangia) during germination. The germ tube differentiates, grows, and develops by mitosis to create a somatic hyphae." [BTO:0004822]
+xref: BTO:0004822
+is_a: FAO:0000011 {source="BTO:0004822"} ! mycelium
+
+[Term]
+id: FAO:0001052
+name: fungal primordium
+def: "A mushroom develops from a nodule, or pinhead, less than two millimeters in diameter, called a primordium, which is typically found on or near the surface of the substrate. It is formed within the mycelium, the mass of threadlike hyphae that make up the fungus. The primordium enlarges into a roundish structure of interwoven hyphae roughly resembling an egg, called a button." [BTO:0005533]
+synonym: "primordium" RELATED [BTO:0005533]
+xref: BTO:0005533
+is_a: FAO:0000001 {source="BTO:0005533"} ! fungal structure
+
+[Term]
+id: FAO:0001053
+name: microsclerotium
+def: "A very small sclerotium." [BTO:0006116]
+xref: BTO:0006116
+is_a: FAO:0001008 {source="BTO:0006116"} ! sclerotium
+
 [Typedef]
 id: develops_from
 name: develops from
