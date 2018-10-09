@@ -646,7 +646,6 @@ name: shmoo
 def: "An elongated, asymmetric cell formed before mating, in response to mating pheromone, by Saccharomyces species and other fungi with similar life cycles. Named after the Al Capp cartoon character, whose shape it resembles." [FAO:mcc, ISBN:0879693798]
 is_a: FAO:0001022 ! mating cell
 
-[Term]
 id: FAO:0001024
 name: basidiocarp
 def: "The large fruiting body characteristic of the majority of fungi of the subphylum Basidiomycotina; it is composed of masses of intertwined hyphal elements and produces basidia. Mushrooms and toadstools are common examples." [BTO:0000114]
@@ -737,6 +736,14 @@ name: microsclerotium
 def: "A very small sclerotium." [BTO:0006116]
 xref: BTO:0006116
 is_a: FAO:0001008 {source="BTO:0006116"} ! sclerotium
+
+[Term]
+id: FAO:0002001
+name: protoperithecium
+def: "A spherical fungal structure that is formed in the sexual phase of ascomycetous fungi such as Neurospora crassa and Sordaria macrospora. A protoperithecium is formed by the enveloping of ascogonia cells by sterile hyphae, and develops into a perithecium." [DOI:10.1007/978-3-642-00286-1_2, PMID:125266, PMID:20739093, PMID:25311923, PMID:4410944, PMID:6235211, PMID:6235212]
+is_a: FAO:0000001 ! fungal structure
+created_by: midori
+creation_date: 2018-09-21T10:54:17Z
 
 [Typedef]
 id: develops_from
