@@ -89,7 +89,7 @@ mirror/%.owl: $(SRC)
 # Release
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
-release: $(ONT).owl $(ONT).obo
+copy_release: $(ONT).owl $(ONT).obo
 	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------

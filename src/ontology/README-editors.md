@@ -46,12 +46,11 @@ committed and pushed, and the travis build passes.
 to release:
 
     cd src/ontology
-    make
+    ./run.sh make
 
-If this looks goo
-d type:
+If this looks good type:
 
-    make prepare_release
+    ./run.sh make prepare_release
 
 This generates derived files such as fao.owl and fao.obo and places
 them in the top level (../..). The versionIRI will be added.
