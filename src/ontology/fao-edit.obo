@@ -684,9 +684,15 @@ xref: BTO:0001139
 is_a: FAO:0000001 {source="BTO:0001139"} ! fungal structure
 
 [Term]
+id: FAO:0001030
+name: substrate mycelium
+def: "An invasive mycelium that forms within a solid or semi-solid substrate such as wood, soil or agar." [FAO:doi]
+is_a: FAO:0000011 {source="BTO:0001562"} ! mycelium
+
+[Term]
 id: FAO:0001031
 name: aerial mycelium
-def: "Hyphal elements growing above the agar surface." [BTO:0001562]
+def: "A mycelium that forms prior to sporulation and extends aerially, or perpendicular to its substrate." [FAO:doi]
 xref: BTO:0001562
 is_a: FAO:0000011 {source="BTO:0001562"} ! mycelium
 
