@@ -46,6 +46,13 @@ $(ONT).owl: $(SRC)
 $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
+$(ONT)-base.owl: $(SRC)
+	$(ROBOT) remove -i $< --trim false --select imports annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)/$(ONT)-base.owl -o $@
+.PRECIOUS: $(ONT)-base.owl
+
+$(ONT)-base.obo: $(ONT)-base.owl
+	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
+
 # ----------------------------------------
 # Import modules
 # ----------------------------------------
