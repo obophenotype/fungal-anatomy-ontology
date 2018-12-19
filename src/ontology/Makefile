@@ -27,7 +27,7 @@ all: sparql_test all_imports $(ONT).owl $(ONT).obo all_base
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
-	cp $(ONT)/$(ONT)-base.owl $(ONT)/$(ONT)-base.obo $(RELEASEDIR) &&\
+	cp $(ONT)-base.owl $(ONT)-base.obo $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
 	cp imports/*.owl $(RELEASEDIR)/imports &&\
 	cp imports/*.obo $(RELEASEDIR)/imports &&\
