@@ -7,14 +7,12 @@ namespace-id-rule: * FAO:$sequence(7,0000001,9999999)$
 remark: version: $Revision: 1.7 $
 ontology: fao
 import: http://purl.obolibrary.org/obo/fao/imports/ncbitaxon_import.owl
-import: http://purl.obolibrary.org/obo/fao/imports/caro_import.owl
 
 [Term]
 id: FAO:0000001
 name: fungal structure
 synonym: "fungal structure ontology" RELATED []
 xref: BTO:0001494
-is_a: CARO:0000000 ! anatomical entity
 relationship: only_in_taxon NCBITaxon:4751 ! Fungi
 
 [Term]
