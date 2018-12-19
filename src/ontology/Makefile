@@ -23,10 +23,11 @@ SPARQLDIR = ../sparql
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl $(ONT).obo
+all: sparql_test all_imports $(ONT).owl $(ONT).obo all_base
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
+	cp $(ONT)/$(ONT)-base.owl $(ONT)/$(ONT)-base.obo $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
 	cp imports/*.owl $(RELEASEDIR)/imports &&\
 	cp imports/*.obo $(RELEASEDIR)/imports &&\
@@ -45,6 +46,8 @@ $(ONT).owl: $(SRC)
 	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
+
+all_base: $(ONT)-base.owl $(ONT)-base.obo
 
 $(ONT)-base.owl: $(SRC)
 	$(ROBOT) remove -i $< --trim false --select imports annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)/$(ONT)-base.owl -o $@
