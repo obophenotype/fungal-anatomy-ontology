@@ -53,7 +53,7 @@ $(ONT).obo: $(ONT).owl
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = caro ro
+IMPORTS = ro ncbitaxon
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS)) $(patsubst %, imports/%_terms.txt,$(IMPORTS))
 
 # generate seed with all referenced entities
@@ -71,7 +71,7 @@ all_imports: $(IMPORTS_OWL)
 
 # Use ROBOT, driven entirely by terms lists NOT from source ontology
 imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
-	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
+	$(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --method BOT -O $(BASE)/$@ -o $@
 .PRECIOUS: imports/%_import.owl
 
 # convert imports to obo.
@@ -81,8 +81,12 @@ imports/%_import.obo: imports/%_import.owl
 	$(ROBOT) convert --check false -i $< -f obo -o $@.tmp && mv $@.tmp $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
-mirror/%.owl: $(SRC)
+mirror/%.owl: 
 	$(ROBOT) convert -I $(OBO)/$*.owl -o $@
+.PRECIOUS: mirror/%.owl
+
+mirror/ncbitaxon.owl:
+	wget --no-check-certificate $(OBO)/ncbitaxon/subsets/taxslim.obo -O $@ && touch $@
 .PRECIOUS: mirror/%.owl
 
 # ----------------------------------------
