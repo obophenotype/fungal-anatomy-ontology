@@ -23,10 +23,11 @@ SPARQLDIR = ../sparql
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl $(ONT).obo
+all: sparql_test all_imports $(ONT).owl $(ONT).obo all_base
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
+	cp $(ONT)-base.owl $(ONT)-base.obo $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
 	cp imports/*.owl $(RELEASEDIR)/imports &&\
 	cp imports/*.obo $(RELEASEDIR)/imports &&\
@@ -41,9 +42,19 @@ prepare_release: all
 
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
+# TODO: temp remove reason until we stop injecting intra NCBITaxon links
 $(ONT).owl: $(SRC)
-	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT)   reduce -i $< -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
+	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
+
+all_base: $(ONT)-base.owl $(ONT)-base.obo
+
+$(ONT)-base.owl: $(SRC)
+	$(ROBOT) remove -i $< --trim false --select imports annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)/$(ONT)-base.owl -o $@
+.PRECIOUS: $(ONT)-base.owl
+
+$(ONT)-base.obo: $(ONT)-base.owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
 # ----------------------------------------
@@ -53,7 +64,7 @@ $(ONT).obo: $(ONT).owl
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = caro ro
+IMPORTS = ro ncbitaxon
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS)) $(patsubst %, imports/%_terms.txt,$(IMPORTS))
 
 # generate seed with all referenced entities
@@ -71,7 +82,7 @@ all_imports: $(IMPORTS_OWL)
 
 # Use ROBOT, driven entirely by terms lists NOT from source ontology
 imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
-	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
+	$(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --method BOT -O $(BASE)/$@ -o $@
 .PRECIOUS: imports/%_import.owl
 
 # convert imports to obo.
@@ -81,8 +92,12 @@ imports/%_import.obo: imports/%_import.owl
 	$(ROBOT) convert --check false -i $< -f obo -o $@.tmp && mv $@.tmp $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
-mirror/%.owl: $(SRC)
+mirror/%.owl: 
 	$(ROBOT) convert -I $(OBO)/$*.owl -o $@
+.PRECIOUS: mirror/%.owl
+
+mirror/ncbitaxon.owl:
+	wget --no-check-certificate $(OBO)/ncbitaxon/subsets/taxslim.obo -O $@ && touch $@
 .PRECIOUS: mirror/%.owl
 
 # ----------------------------------------
