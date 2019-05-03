@@ -661,7 +661,7 @@ is_a: FAO:0000018 ! unicellular structure
 [Term]
 id: FAO:0001023
 name: shmoo
-def: "An elongated, asymmetric cell formed before mating, in response to mating pheromone, by Saccharomyces species and other fungi with similar life cycles. Named after the Al Capp cartoon character, whose shape it resembles." [FAO:mcc, ISBN:0879693798]
+def: "An elongated, asymmetric cell formed before mating, in response to mating pheromone, by Saccharomyces species and other fungi with similar life cycles. Named after the Al Capp cartoon character, whose shape it resembles." [FAO:mcc, ISBN:0879693568]
 is_a: FAO:0001022 ! mating cell
 
 [Term]
