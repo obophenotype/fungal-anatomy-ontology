@@ -758,6 +758,24 @@ is_a: FAO:0000001 ! fungal structure
 created_by: midori
 creation_date: 2019-05-03T13:33:22Z
 
+[Term]
+id: FAO:0002003
+name: multicellular fungal structure, unicellular organism
+def: "A multicellular fungal structure composed of two or more cells of a single unicellular organism." [FAO:doi]
+synonym: "multicellular structure, unicellular organism" EXACT [FAO:doi]
+is_a: FAO:0002002 ! multicellular fungal structure
+created_by: midori
+creation_date: 2019-05-03T14:07:29Z
+
+[Term]
+id: FAO:0002004
+name: multicellular fungal structure, multicellular organism
+def: "A multicellular fungal structure composed of two or more cells of a single multicellular organism." [FAO:doi]
+synonym: "multicellular structure, multicellular organism" EXACT [FAO:doi]
+is_a: FAO:0002002 ! multicellular fungal structure
+created_by: midori
+creation_date: 2019-05-03T14:10:13Z
+
 [Typedef]
 id: develops_from
 name: develops from
