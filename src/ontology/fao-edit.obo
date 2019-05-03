@@ -750,6 +750,14 @@ is_a: FAO:0000008 ! ascocarp
 created_by: midori
 creation_date: 2018-09-21T10:54:17Z
 
+[Term]
+id: FAO:0002002
+name: multicellular fungal structure
+def: "A fungal structure that comprises more than one cell." [FAO:mah]
+is_a: FAO:0000001 ! fungal structure
+created_by: midori
+creation_date: 2019-05-03T13:33:22Z
+
 [Typedef]
 id: develops_from
 name: develops from
