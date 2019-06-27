@@ -673,10 +673,10 @@ is_a: FAO:0000011 {source="BTO:0000890"} ! mycelium
 
 [Term]
 id: FAO:0001026
-name: mycobiont
+name: obsolete mycobiont
 def: "OBSOLETE. The fungal component of the lichen partnership, absorbing nutrients and providing structural support for the plant." [BTO:0000892]
 comment: This term was made obsolete because it represents a class of organism, not a fungal structure.
-name: obsolete
+is_obsolete: true
 
 [Term]
 id: FAO:0001027

@@ -46,7 +46,7 @@ prepare_release: all
 $(ONT).owl: $(SRC)
 	$(ROBOT)   reduce -i $< -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
-	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
+	$(ROBOT) -vvv convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
 all_base: $(ONT)-base.owl $(ONT)-base.obo
 
