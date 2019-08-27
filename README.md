@@ -11,10 +11,6 @@ The FAO is being developed by researchers in diverse fungal research communities
 
 ![img](http://www.yeastgenome.org/images/fao.color.png)
 
-## Homepage
-
-See the [FAO Homepage](http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/index.html)
-
 ## Versions
 
 ### Stable release versions
