@@ -10,7 +10,7 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fao.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fao/releases/2020-01-10/fao.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fao/releases/2020-01-21/fao.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/fao/imports/ncbitaxon_import.owl"/>
         <oboInOwl:NamespaceIdRule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">* FAO:$sequence(7,0000001,9999999)$</oboInOwl:NamespaceIdRule>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
@@ -273,7 +273,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular formation composed of cells from more than one species.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular fungal structure composed of cells from more than one species.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multispecific structure</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000002</oboInOwl:id>
@@ -282,8 +282,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular formation composed of cells from more than one species.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular fungal structure composed of cells from more than one species.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -299,7 +300,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure directly from which spores are formed following sexual reproduction in a Basidiomycete.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore-producing structure found in a Basidiomycete; formed when the terminal cell of a dikaryotic hyphal branch inflates and undergoes karyogamy and meiosis.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000003</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basidium</rdfs:label>
@@ -307,7 +308,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure directly from which spores are formed following sexual reproduction in a Basidiomycete.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore-producing structure found in a Basidiomycete; formed when the terminal cell of a dikaryotic hyphal branch inflates and undergoes karyogamy and meiosis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -366,7 +367,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stalk or stem; composed of hyphae arrayed parallel to the long axis of the structure; a stipe may be a single supporting hypha.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The stalk or stem that supports the cap of a mushroom. A stipe is usually composed of hyphae arrayed parallel to the long axis of the structure; in some species a stipe may be a single supporting hypha.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000006</oboInOwl:id>
@@ -375,7 +376,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stalk or stem; composed of hyphae arrayed parallel to the long axis of the structure; a stipe may be a single supporting hypha.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The stalk or stem that supports the cap of a mushroom. A stipe is usually composed of hyphae arrayed parallel to the long axis of the structure; in some species a stipe may be a single supporting hypha.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -407,7 +409,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure within which or at the surface of, an ascus develops in Ascomycetes.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure within, or at the surface of, which an ascus develops in Ascomycetes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002161</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000008</oboInOwl:id>
@@ -416,7 +418,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure within which or at the surface of, an ascus develops in Ascomycetes.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure within, or at the surface of, which an ascus develops in Ascomycetes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -432,7 +434,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The structure on which the spore-bearing tissue is carried in sexually-derived fruiting bodies.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The structure on which spore-bearing tissue is carried in sexually-derived fruiting bodies.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cap</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000009</oboInOwl:id>
@@ -441,7 +443,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The structure on which the spore-bearing tissue is carried in sexually-derived fruiting bodies.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The structure on which spore-bearing tissue is carried in sexually-derived fruiting bodies.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -451,18 +453,59 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0002004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure directly within which spores are contained or from which spores are formed.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular anatomical structure that functions in the production of spores, which are directly borne upon or within sporogenous cells that form part of the sporophore.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0075259</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruit body</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruitbody</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruiting body</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spore-bearing structure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spore-producing structure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sporocarp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spore-bearing organ</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000010</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sporophore</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure directly within which spores are contained or from which spores are formed.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular anatomical structure that functions in the production of spores, which are directly borne upon or within sporogenous cells that form part of the sporophore.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruit body</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:doi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruitbody</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:doi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruiting body</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:doi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spore-bearing structure</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:doi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spore-producing structure</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:doi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sporocarp</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:doi</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -518,7 +561,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete that is contained in an ascus associated with an ascocarp.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascospore that is contained in an ascus associated with an ascocarp.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000013</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ascospore in ascocarp-bound ascus</rdfs:label>
@@ -526,8 +569,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete that is contained in an ascus associated with an ascocarp.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascospore that is contained in an ascus associated with an ascocarp.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -554,7 +598,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000014"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascus that is not associated with an ascocarp and is usually derived from a single cell.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascus that is not associated with an ascocarp, and is usually derived from a single cell.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000015</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free ascus</rdfs:label>
@@ -562,7 +606,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascus that is not associated with an ascocarp and is usually derived from a single cell.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascus that is not associated with an ascocarp, and is usually derived from a single cell.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -578,7 +622,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete that is contained in an ascus not associated with an ascocarp.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascospore that is contained in a free ascus (i.e. not associated with an ascocarp).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000016</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ascospore in free ascus</rdfs:label>
@@ -586,8 +630,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete that is contained in an ascus not associated with an ascocarp.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascospore that is contained in a free ascus (i.e. not associated with an ascocarp).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -596,7 +641,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following meiosis. Sometimes following meiosis, prospores may undergo one or more rounds of mitosis before they are fully mature.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following meiosis. In some species, prospores formed by meiosis may undergo one or more rounds of mitosis before they are fully mature.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meiotically-derived spore</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000017</oboInOwl:id>
@@ -605,7 +650,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following meiosis. Sometimes following meiosis, prospores may undergo one or more rounds of mitosis before they are fully mature.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following meiosis. In some species, prospores formed by meiosis may undergo one or more rounds of mitosis before they are fully mature.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -615,7 +660,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual cell composed of a plasma membrane, contents internal to the plasma membrane, and any external protective or encapsulating structure.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal structure that comprises a single cell. An individual cell is composed of a plasma membrane, contents internal to the plasma membrane, and any external protective or encapsulating structure.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000018</oboInOwl:id>
@@ -624,8 +669,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000018"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual cell composed of a plasma membrane, contents internal to the plasma membrane, and any external protective or encapsulating structure.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal structure that comprises a single cell. An individual cell is composed of a plasma membrane, contents internal to the plasma membrane, and any external protective or encapsulating structure.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -635,7 +681,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000018"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A differentiated form of an organism produced during or as a result of an asexual or sexual reproductive process; usually a cell with a thick cell wall that stores and protects one or more nuclei. Spores may be produced in response to, and are characteristically resistant to, adverse environmental conditions.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore produced by a fungus. A spore is a differentiated form of an organism produced during or as a result of an asexual or sexual reproductive process; usually a cell with a thick cell wall that stores and protects one or more nuclei. Spores may be produced in response to, and are characteristically resistant to, adverse environmental conditions.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000019</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spore</rdfs:label>
@@ -643,7 +689,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000019"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A differentiated form of an organism produced during or as a result of an asexual or sexual reproductive process; usually a cell with a thick cell wall that stores and protects one or more nuclei. Spores may be produced in response to, and are characteristically resistant to, adverse environmental conditions.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore produced by a fungus. A spore is a differentiated form of an organism produced during or as a result of an asexual or sexual reproductive process; usually a cell with a thick cell wall that stores and protects one or more nuclei. Spores may be produced in response to, and are characteristically resistant to, adverse environmental conditions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -653,7 +699,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000017"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled spore that forms in an ascus. Clusters of four or eight spores are formed in a single ascus following sexual reproduction; found in Ascomycetes.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000020</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ascospore</rdfs:label>
@@ -661,7 +707,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000020"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled spore that forms in an ascus. Clusters of four or eight spores are formed in a single ascus following sexual reproduction; found in Ascomycetes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16339736</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -677,7 +724,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Basidiomycete; formed externally on extrusions of the basidium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled spore formed externally on extrusions of a basidium following sexual reproduction; found in Basidiomycetes.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000021</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basidiospore</rdfs:label>
@@ -685,8 +732,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000021"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei following sexual reproduction in an Basidiomycete; formed externally on extrusions of the basidium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled spore formed externally on extrusions of a basidium following sexual reproduction; found in Basidiomycetes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9781107079915</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -696,7 +744,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000021"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore with a very thick cell wall and extracellular peptidoglycan spikes that stores and protects one or more nuclei during dormancy in a Basidiomycete.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A diploid spore with a thick, pigmented, sculpted cell wall, and extracellular peptidoglycan spikes that is formed during growth in a plant host by some Basidiomycete species, including pathogenic smut (Ustilaginales) and rust (Pucciniales) fungi.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000022</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">teliospore</rdfs:label>
@@ -704,7 +752,10 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore with a very thick cell wall and extracellular peptidoglycan spikes that stores and protects one or more nuclei during dormancy in a Basidiomycete.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A diploid spore with a thick, pigmented, sculpted cell wall, and extracellular peptidoglycan spikes that is formed during growth in a plant host by some Basidiomycete species, including pathogenic smut (Ustilaginales) and rust (Pucciniales) fungi.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:27888605</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8898211</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -714,7 +765,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following mitosis or mitoses.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following one or more rounds of mitosis, without meiosis.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitotically-derived spore</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000023</oboInOwl:id>
@@ -723,7 +774,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000023"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following mitosis or mitoses.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spore formed following one or more rounds of mitosis, without meiosis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2524423</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9529886</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
@@ -735,7 +786,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000023"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An asexual, nonmotile spore formed by higher fungi; conidia are usually made from the side or tip of specialized sporogenous cells and do not form by progressive cleavage of the cytoplasm.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An asexual, nonmotile spore formed by higher fungi. Conidia are usually made from the side or tip of specialized sporogenous cells and do not form by progressive cleavage of the cytoplasm.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000024</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conidium</rdfs:label>
@@ -743,7 +794,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000024"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An asexual, nonmotile spore formed by higher fungi; conidia are usually made from the side or tip of specialized sporogenous cells and do not form by progressive cleavage of the cytoplasm.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An asexual, nonmotile spore formed by higher fungi. Conidia are usually made from the side or tip of specialized sporogenous cells and do not form by progressive cleavage of the cytoplasm.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2524423</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9529886</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
@@ -756,14 +807,22 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000024"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conidium that has only one nucleus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate conidium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000025</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate conidium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mononucleate conidium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000025"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conidium that has only one nucleus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000025"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate conidium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -773,18 +832,34 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000021"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei during dispersal following reproduction in an Basidiomycete.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thin-walled spore that is formed in a uredinium and is the primary dispersal mode for rust-causing Basidiomycete fungi.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urediospore</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uredospore</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urediniospore</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urediospore</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000026</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uredospore</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urediniospore</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled spore that stores and protects one or more nuclei during dispersal following reproduction in an Basidiomycete.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thin-walled spore that is formed in a uredinium and is the primary dispersal mode for rust-causing Basidiomycete fungi.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21642346</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:26731728</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30206343</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000026"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urediospore</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000026"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uredospore</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -793,7 +868,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000025"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A uninucleate spore formed on specialized cells or projections, sterigma, of a conidiophore head.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mononucleate spore formed on specialized cells or projections (sterigma) of a conidiophore head.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000027</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conidium of conidiophore head</rdfs:label>
@@ -801,7 +876,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A uninucleate spore formed on specialized cells or projections, sterigma, of a conidiophore head.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mononucleate spore formed on specialized cells or projections (sterigma) of a conidiophore head.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9529886</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -812,7 +887,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000025"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smaller of two types of asexual spores formed by some fungi. An ovoid to pear-shaped asexual spore that contains very little cytoplasm and organelles, is uninucleate, and forms in vegetative hypae within a mycelium. Micronidia are extruded from the hyphal cell wall.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smaller of two types of asexual spores formed by some fungi. An ovoid to pear-shaped asexual spore that contains very little cytoplasm and organelles, is mononucleate, and forms in vegetative hypae within a mycelium. Micronidia are extruded from the hyphal cell wall.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000028</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microconidium</rdfs:label>
@@ -820,7 +895,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000028"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smaller of two types of asexual spores formed by some fungi. An ovoid to pear-shaped asexual spore that contains very little cytoplasm and organelles, is uninucleate, and forms in vegetative hypae within a mycelium. Micronidia are extruded from the hyphal cell wall.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smaller of two types of asexual spores formed by some fungi. An ovoid to pear-shaped asexual spore that contains very little cytoplasm and organelles, is mononucleate, and forms in vegetative hypae within a mycelium. Micronidia are extruded from the hyphal cell wall.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8357339</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
@@ -834,14 +909,22 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000025"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000038"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A macroconidium that has only one nucleus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate macroconidium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000029</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate macroconidium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mononucleate macroconidium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000029"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A macroconidium that has only one nucleus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate macroconidium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -853,14 +936,22 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000029"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000042"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blastoconidium that has only one nucleus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate blastoconidium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000030</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate blastoconidium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mononucleate blastoconidium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blastoconidium that has only one nucleus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000030"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate blastoconidium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -872,14 +963,22 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000029"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000041"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arthroconidium that has only one nucleus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate arthroconidium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000031</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate arthroconidium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mononucleate arthroconidium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000031"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arthroconidium that has only one nucleus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uninucleate arthroconidium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -889,7 +988,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000018"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single cell where nutrition and growth predominate, as opposed to cells that are undergoing sexual processes.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single cell that is in the vegetative growth stage of an organism&apos;s life cycle, in which metabolism and growth predominate, and is not undergoing sexual processes.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yeast-form</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000032</oboInOwl:id>
@@ -898,7 +997,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000032"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single cell where nutrition and growth predominate, as opposed to cells that are undergoing sexual processes.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single cell that is in the vegetative growth stage of an organism&apos;s life cycle, in which metabolism and growth predominate, and is not undergoing sexual processes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -927,7 +1027,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular structure composed of multiple species; minimally composed of an alga or cyanobacterium and a fungus.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A composite structure that forms the vegetative portion of a lichen; minimally composed of at least one fungal species (the mycobiont) and an alga or cyanobacterium (the photobiont).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000034</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lichen thallus</rdfs:label>
@@ -935,9 +1035,11 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000034"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular structure composed of multiple species; minimally composed of an alga or cyanobacterium and a fungus.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A composite structure that forms the vegetative portion of a lichen; minimally composed of at least one fungal species (the mycobiont) and an alga or cyanobacterium (the photobiont).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.britishlichensociety.org.uk/about-lichens/what-is-a-lichen</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.livescience.com/55008-lichens.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1041,16 +1143,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000017"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled, sexual, resting spore formed by Zygomycetes; sometimes refers to the spore and the multi-layered cell wall that encloses the spore, the zygosporangium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled, sexual, resting spore that forms in a zygosporangium; typical of Zygomycetes.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000040</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that &quot;zygospore&quot; is sometimes used to refer to both the spore and the multi-layered cell wall that encloses the spore, the zygosporangium.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygospore</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000040"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick walled, sexual, resting spore formed by Zygomycetes; sometimes refers to the spore and the multi-layered cell wall that encloses the spore, the zygosporangium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled, sexual, resting spore that forms in a zygosporangium; typical of Zygomycetes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471940526</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9781107079915</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1060,7 +1164,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000038"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cylindrical spore formed by development and compartmentation of hyphae; the hyphae are often supporting blastoconidiophores.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cylindrical spore formed by development and compartmentation of hyphae; the hyphae are often supporting blastoconidiophores.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arthrospore</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000041</oboInOwl:id>
@@ -1069,7 +1173,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000041"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cylindrical spore formed by development and compartmentation of hyphae; the hyphae are often supporting blastoconidiophores.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cylindrical spore formed by development and compartmentation of hyphae; the hyphae are often supporting blastoconidiophores.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2524423</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:clt</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1109,7 +1213,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized hypha, often aerial, that gives rise to asexual spores, known as conidia.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized hypha, often aerial, that gives rise to asexual spores known as conidia.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000043</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conidiophore</rdfs:label>
@@ -1117,7 +1221,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000043"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized hypha, often aerial, that gives rise to asexual spores, known as conidia.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized hypha, often aerial, that gives rise to asexual spores known as conidia.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AspGD:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9529886</oboInOwl:hasDbXref>
@@ -1135,7 +1239,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A small hyphal branch or structure which supports a sporangium, a conidium, or a basidiospore. In species with biseriate (two layered) sterigmata such as A. nidulans, the first layer comprises primary sterigmata (metulae) and the second layer secondary sterigmata (phialides). Some species, e.g. A. fumigatus, A. oryzae, and others, have only phialides.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A small hyphal branch or structure which supports a sporangium, a conidium, or a basidiospore. In species with biseriate (two-layered) sterigmata such as A. nidulans, the first layer comprises primary sterigmata (metulae) and the second layer secondary sterigmata (phialides). Some species, e.g. A. fumigatus, A. oryzae, and others, have only phialides.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sterigmata (plural)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000044</oboInOwl:id>
@@ -1144,7 +1248,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000044"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A small hyphal branch or structure which supports a sporangium, a conidium, or a basidiospore. In species with biseriate (two layered) sterigmata such as A. nidulans, the first layer comprises primary sterigmata (metulae) and the second layer secondary sterigmata (phialides). Some species, e.g. A. fumigatus, A. oryzae, and others, have only phialides.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A small hyphal branch or structure which supports a sporangium, a conidium, or a basidiospore. In species with biseriate (two-layered) sterigmata such as A. nidulans, the first layer comprises primary sterigmata (metulae) and the second layer secondary sterigmata (phialides). Some species, e.g. A. fumigatus, A. oryzae, and others, have only phialides.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AspGD:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1222,15 +1326,16 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized multinucleate cell that originates from a nest-like aggregation of hyphae during sexual development. Hulle cells serve as nurse cells to the developing cleistothecium. Note that &quot;Hulle&quot; is properly written with an umlaut character on the &quot;u&quot;.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized multinucleate cell that originates from a nest-like aggregation of hyphae during sexual development. Hulle cells serve as nurse cells to the developing cleistothecium.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000048</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that &quot;Hulle&quot; is properly written with an umlaut on the &quot;u&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hulle cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000048"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized multinucleate cell that originates from a nest-like aggregation of hyphae during sexual development. Hulle cells serve as nurse cells to the developing cleistothecium. Note that &quot;Hulle&quot; is properly written with an umlaut character on the &quot;u&quot;.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized multinucleate cell that originates from a nest-like aggregation of hyphae during sexual development. Hulle cells serve as nurse cells to the developing cleistothecium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AspGD:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19210625</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1290,14 +1395,14 @@
     <!-- http://purl.obolibrary.org/obo/FAO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oidia are borne a few at a time on very simple hyphae that protrude a short distance into the substrate, and are usually presumed not to constitute the main reproductive strategy of the fungus.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An asexual spore that is produced on very simple hyphae that protrude a short distance into the substrate. Oidia are borne a few at a time, and are usually presumed not to constitute the main reproductive strategy of the fungus.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-06-10T12:03:49Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0034297</oboInOwl:hasDbXref>
@@ -1308,8 +1413,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000051"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oidia are borne a few at a time on very simple hyphae that protrude a short distance into the substrate, and are usually presumed not to constitute the main reproductive strategy of the fungus.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Oidium</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An asexual spore that is produced on very simple hyphae that protrude a short distance into the substrate. Oidia are borne a few at a time, and are usually presumed not to constitute the main reproductive strategy of the fungus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.mushroomthejournal.com/greatlakesdata/Terms/oidiu163.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1339,7 +1444,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000052"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A zygosporangium is a thick-walled structure in which spores are produced, and is characteristic of the Zygomycetes.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled structure that arises from a zygote formed by the fusion or conjugation of two hyphal branches, produces spores, and is characteristic of the Zygomycetes.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-06-10T12:14:19Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0075271</oboInOwl:hasDbXref>
@@ -1350,8 +1455,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000053"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A zygosporangium is a thick-walled structure in which spores are produced, and is characteristic of the Zygomycetes.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick-walled structure that arises from a zygote formed by the fusion or conjugation of two hyphal branches, produces spores, and is characteristic of the Zygomycetes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9781107079915</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1424,7 +1530,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A teliospore-bearing sorus of the rust fungi. A pustule-like sorus formed on the tissue of a plant infected by a rust fungus and producing teliospores.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A teliospore-bearing sorus of the rust fungi. A sorus is a cluster of sporangia; the telium is a pustule-like sorus that forms on the tissue of a plant infected by a rust fungus and produces teliospores.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-06-10T02:47:39Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0075275</oboInOwl:hasDbXref>
@@ -1435,7 +1541,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000057"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A teliospore-bearing sorus of the rust fungi. A pustule-like sorus formed on the tissue of a plant infected by a rust fungus and producing teliospores.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A teliospore-bearing sorus of the rust fungi. A sorus is a cluster of sporangia; the telium is a pustule-like sorus that forms on the tissue of a plant infected by a rust fungus and produces teliospores.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1445,10 +1551,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reddish, pustule-like structure formed by a rust fungus and consisting of uredospores.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reddish, pustule-like structure formed by a rust fungus, in which urediniospores are produced.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-06-10T02:49:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0075279</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uredium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0000058</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uredinium</rdfs:label>
@@ -1456,8 +1563,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000058"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reddish, pustule-like structure formed by a rust fungus and consisting of uredospores.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reddish, pustule-like structure formed by a rust fungus, in which urediniospores are produced.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000058"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uredium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1466,7 +1579,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tubular structure that connects two individuals during conjugation (usually forming in response to pheromone) and through which the transfer of genetic material can occur (http://science.yourdictionary.com/conjugation-tube).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tubular structure that connects two individuals during conjugation, through which the transfer of genetic material can occur. The conjugation tube usually forms in response to pheromone.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-02T03:23:27Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
@@ -1476,8 +1589,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000059"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tubular structure that connects two individuals during conjugation (usually forming in response to pheromone) and through which the transfer of genetic material can occur (http://science.yourdictionary.com/conjugation-tube).</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tubular structure that connects two individuals during conjugation, through which the transfer of genetic material can occur. The conjugation tube usually forms in response to pheromone.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGD:doi</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://science.yourdictionary.com/conjugation-tube</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1538,7 +1652,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure that separates the nuclei within monokaryotic hyphae into distinct hyphal segments.   Monokaryotic hyphae are produced during unisexual reproduction or hyphal development of a diploid, in contrast to dikaryotic hyphae which are produced by mating of hyphae of differing sexual types.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure that separates the nuclei within monokaryotic hyphae into distinct hyphal segments. Monokaryotic hyphae are produced during unisexual reproduction or hyphal development of a diploid, in contrast to dikaryotic hyphae which are produced by mating of hyphae of differing sexual types.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-02T03:31:28Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
@@ -1548,7 +1662,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000062"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure that separates the nuclei within monokaryotic hyphae into distinct hyphal segments.   Monokaryotic hyphae are produced during unisexual reproduction or hyphal development of a diploid, in contrast to dikaryotic hyphae which are produced by mating of hyphae of differing sexual types.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure that separates the nuclei within monokaryotic hyphae into distinct hyphal segments. Monokaryotic hyphae are produced during unisexual reproduction or hyphal development of a diploid, in contrast to dikaryotic hyphae which are produced by mating of hyphae of differing sexual types.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGD:doi</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1558,7 +1672,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000032"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large cells produced by fungi, such as Cryptococcus neoformans, that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large, highly polyploid cell that has altered capsule structure, a thickened cell wall, and increased resistance to nitrosative and oxidative stresses relative to yeast-form cells of the same species. Identified in Cryptococcus neoformans, in which the morphological transition to Tina cell form enables the fungus to evade the immune system of a mammalian host.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-03T11:15:35Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
@@ -1568,9 +1682,10 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000063"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large cells produced by fungi, such as Cryptococcus neoformans, that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large, highly polyploid cell that has altered capsule structure, a thickened cell wall, and increased resistance to nitrosative and oxidative stresses relative to yeast-form cells of the same species. Identified in Cryptococcus neoformans, in which the morphological transition to Tina cell form enables the fungus to evade the immune system of a mammalian host.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGD:doi</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21821718</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:29775474</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1606,7 +1721,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dikaryon is a cell pair observed in some fungi, within which two compatible nuclei of two cells pair off after plasmogamy and cohabit without karyogamy within a hyphal compartment, synchronously dividing such that pairs are maintained in the older cells and newer cells or hyphal tips are also binucleate (http://en.wikipedia.org/wiki/Dikaryon).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A binucleate cell observed in some fungi that forms when two compatible nuclei, each originating from one of the cells, pair off after plasmogamy and cohabit without karyogamy within a hyphal compartment. The nuclei divide synchronously and are passed in pairs to newer cells or hyphal tips, which are also binucleate.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-03T11:20:00Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
@@ -1616,8 +1731,10 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000065"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dikaryon is a cell pair observed in some fungi, within which two compatible nuclei of two cells pair off after plasmogamy and cohabit without karyogamy within a hyphal compartment, synchronously dividing such that pairs are maintained in the older cells and newer cells or hyphal tips are also binucleate (http://en.wikipedia.org/wiki/Dikaryon).</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A binucleate cell observed in some fungi that forms when two compatible nuclei, each originating from one of the cells, pair off after plasmogamy and cohabit without karyogamy within a hyphal compartment. The nuclei divide synchronously and are passed in pairs to newer cells or hyphal tips, which are also binucleate.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGD:doi</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Dikaryon</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1647,7 +1764,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000023"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large, thick-walled resting spore produced by several kinds of fungi.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large, thick-walled resting spore with condensed cytoplasm, formed within hyphae or at hyphal tips in several kinds of fungi.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-03T11:41:14Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
@@ -1657,8 +1774,10 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0000067"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large, thick-walled resting spore produced by several kinds of fungi.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large, thick-walled resting spore with condensed cytoplasm, formed within hyphae or at hyphal tips in several kinds of fungi.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16215181</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGD:doi</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1667,7 +1786,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0002004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threadlike, tubular filamentous fungal structure.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A long, branching filamentous structure formed by a vegetatively growing fungus.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001001</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypha</rdfs:label>
@@ -1675,7 +1794,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threadlike, tubular filamentous fungal structure.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A long, branching filamentous structure formed by a vegetatively growing fungus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1710,7 +1830,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threadlike, tubular filamentous fungal structure, existing as part of a group or mass of such structures, the mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that forms part of a mycelium.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001003</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypha in mycelium</rdfs:label>
@@ -1718,7 +1838,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threadlike, tubular filamentous fungal structure, existing as part of a group or mass of such structures, the mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that forms part of a mycelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1730,7 +1851,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided internally by septa, or lateral cell walls, that exists as part of a group or mass of such structures, the mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided internally by septa, or lateral cell walls, and that exists as part of a mycelium.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001004</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">septate hypha in mycelium</rdfs:label>
@@ -1738,7 +1859,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided internally by septa, or lateral cell walls, that exists as part of a group or mass of such structures, the mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided internally by septa, or lateral cell walls, and that exists as part of a mycelium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1768,7 +1889,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick strand of hyphae, oriented in parallel to each other, with specialized channels through which nutrients are conducted.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick strand of hyphae oriented in parallel to each other, with specialized channels through which nutrients are conducted.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000660</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001006</oboInOwl:id>
@@ -1777,7 +1898,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick strand of hyphae, oriented in parallel to each other, with specialized channels through which nutrients are conducted.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thick strand of hyphae oriented in parallel to each other, with specialized channels through which nutrients are conducted.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:clt</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0632030771</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1898,7 +2019,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha existing as a part of a mass or group of hyphae, the mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is part of a mycelium.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001012</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyphal tip, hypha in mycelium</rdfs:label>
@@ -1906,7 +2027,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha existing as a part of a mass or group of hyphae, the mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is part of a mycelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1918,7 +2040,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001018"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypha containing dolipore septa, or cross-walls, containing a central pore around which the septum is swollen to form a barrel-shaped structure; existing as part of a group or mass of similar hyphae, or mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided by dolipore septa and is part of a mycelium. A dolipore septum is a cross-wall that contains a central pore around which the septum is swollen to form a barrel-shaped structure.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001013</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypha with dolipore septa, in mycelium</rdfs:label>
@@ -1926,7 +2048,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypha containing dolipore septa, or cross-walls, containing a central pore around which the septum is swollen to form a barrel-shaped structure; existing as part of a group or mass of similar hyphae, or mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided by dolipore septa and is part of a mycelium. A dolipore septum is a cross-wall that contains a central pore around which the septum is swollen to form a barrel-shaped structure.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1938,7 +2061,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha whose growing portion contains multiple nuclei but is not divided internally by septa, or lateral cell walls; existing as part of a mass or group of such hyphae, the mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is part of a mycelium, and whose growing portion contains multiple nuclei but is not divided internally by septa.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coenocytic hypha in mycelium</oboInOwl:hasRelatedSynonym>
@@ -1948,7 +2071,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001014"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha whose growing portion contains multiple nuclei but is not divided internally by septa, or lateral cell walls; existing as part of a mass or group of such hyphae, the mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is part of a mycelium, and whose growing portion contains multiple nuclei but is not divided internally by septa.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1966,7 +2090,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by septa, or lateral cell walls, existing as part of a group or mass of such hyphae, the mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of an aseptate hypha that is part of a mycelium.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001015</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyphal tip, septate hypha in mycelium</rdfs:label>
@@ -1974,7 +2098,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by septa, or lateral cell walls, existing as part of a group or mass of such hyphae, the mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of an aseptate hypha that is part of a mycelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1991,7 +2116,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by septa, or lateral cell walls.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of an aseptate hypha that is part of a mycelium.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001016</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyphal tip, septate hypha</rdfs:label>
@@ -1999,7 +2124,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by septa, or lateral cell walls.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of an aseptate hypha that is part of a mycelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2017,7 +2143,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by dolipore septa, existing as part of a group or mass of such hyphae, the mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by dolipore septa and is part of a mycelium.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001017</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyphal tip, hypha with dolipore septa in mycelium</rdfs:label>
@@ -2025,7 +2151,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by dolipore septa, existing as part of a group or mass of such hyphae, the mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by dolipore septa and is part of a mycelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2036,7 +2163,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypha containing dolipore septa, or cross-walls; septa contain a central pore around which the septum is swollen to form a barrel-shaped structure; pore is covered on each side of the septum by a septal pore cap (parenthosome).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided by dolipore septa. A dolipore septum is a cross-wall that contains a central pore around which the septum is swollen to form a barrel-shaped structure.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001018</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypha with dolipore septa</rdfs:label>
@@ -2044,7 +2171,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001018"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypha containing dolipore septa, or cross-walls; septa contain a central pore around which the septum is swollen to form a barrel-shaped structure; pore is covered on each side of the septum by a septal pore cap (parenthosome).</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hypha that is divided by dolipore septa. A dolipore septum is a cross-wall that contains a central pore around which the septum is swollen to form a barrel-shaped structure.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2061,7 +2189,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by septa, or cross-walls, of the dolipore type.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided by dolipore septa. A dolipore septum is a cross-wall that contains a central pore around which the septum is swollen to form a barrel-shaped structure.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001019</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyphal tip, hypha with dolipore septa</rdfs:label>
@@ -2069,7 +2197,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001019"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided internally by septa, or cross-walls, of the dolipore type.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is divided by dolipore septa. A dolipore septum is a cross-wall that contains a central pore around which the septum is swollen to form a barrel-shaped structure.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2087,7 +2216,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing tip of a hypha whose growing portion is not divided internally by septa, or lateral cell walls, existing as part of a group or mass of such hyphae, the mycelium.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is part of a mycelium, and whose growing portion contains multiple nuclei but is not divided internally by septa.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001020</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyphal tip, aseptate hypha in mycelium</rdfs:label>
@@ -2095,7 +2224,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001020"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing tip of a hypha whose growing portion is not divided internally by septa, or lateral cell walls, existing as part of a group or mass of such hyphae, the mycelium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growing end of a hypha that is part of a mycelium, and whose growing portion contains multiple nuclei but is not divided internally by septa.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:mcc</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471522295</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2178,7 +2308,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass of hyphae, usually in wood or bark; visible with the naked eye.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mass of hyphae, usually in wood or bark; visible with the naked eye.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000890</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001025</oboInOwl:id>
@@ -2193,7 +2323,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001025"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass of hyphae, usually in wood or bark; visible with the naked eye.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mass of hyphae, usually in wood or bark; visible with the naked eye.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000890</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2221,8 +2351,8 @@
     <!-- http://purl.obolibrary.org/obo/FAO_0001027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The symbiotic association of the mycelium of a fungus with the roots of a seed plant.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A composite structure formed by the symbiotic association of the mycelium of a fungus with the roots of a seed plant.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000893</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001027</oboInOwl:id>
@@ -2230,14 +2360,8 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001027"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000893</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The symbiotic association of the mycelium of a fungus with the roots of a seed plant.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A composite structure formed by the symbiotic association of the mycelium of a fungus with the roots of a seed plant.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000893</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2247,7 +2371,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fruiting body formed by some cellular slime moulds; has both stalk and spore-mass.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruiting body formed by some cellular slime moulds; has a stalk and a spore mass.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001098</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001028</oboInOwl:id>
@@ -2262,7 +2386,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001028"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fruiting body formed by some cellular slime moulds; has both stalk and spore-mass.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruiting body formed by some cellular slime moulds; has a stalk and a spore mass.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001098</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2341,7 +2465,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000008"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open or expanded fruiting body seen in lichens and actinomycetous fungi, having asci contained on its exposed surface.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open or expanded fruiting body that has asci contained on its exposed surface; found in lichens and actinomycetous fungi.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002160</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001034</oboInOwl:id>
@@ -2356,7 +2480,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001034"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open or expanded fruiting body seen in lichens and actinomycetous fungi, having asci contained on its exposed surface.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open or expanded fruiting body that has asci contained on its exposed surface; found in lichens and actinomycetous fungi.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002160</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2366,7 +2490,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000008"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of fruiting body (ascocarp) composed of a loose network of mycelia through which ascospores filter and are released at maturity; its reproductive organs are in the form of naked asci. Seen in fungi of the family Gymnoascaceae.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascocarp that is composed of a loose network of mycelia through which ascospores filter and are released at maturity; its reproductive organs are in the form of naked asci. Found in fungi of the family Gymnoascaceae.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002163</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001035</oboInOwl:id>
@@ -2381,7 +2505,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001035"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of fruiting body (ascocarp) composed of a loose network of mycelia through which ascospores filter and are released at maturity; its reproductive organs are in the form of naked asci. Seen in fungi of the family Gymnoascaceae.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ascocarp that is composed of a loose network of mycelia through which ascospores filter and are released at maturity; its reproductive organs are in the form of naked asci. Found in fungi of the family Gymnoascaceae.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002163</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2397,7 +2521,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0002001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The flask-shaped fruiting body of certain molds and ascomycetous fungi having a pore for the escape of spores.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flask-shaped fruiting body that forms a pore for the escape of spores; found in some molds and ascomycetous fungi.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002164</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001036</oboInOwl:id>
@@ -2412,7 +2536,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001036"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The flask-shaped fruiting body of certain molds and ascomycetous fungi having a pore for the escape of spores.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flask-shaped fruiting body that forms a pore for the escape of spores; found in some molds and ascomycetous fungi.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002164</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2422,7 +2546,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A germ tube is an outgrowth produced by certain species of spore-releasing fungi (sporangia) during germination. The germ tube differentiates, grows, and develops by mitosis to create a somatic hyphae.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outgrowth produced by germinating spores in certain species of spore-releasing fungi. The germ tube differentiates, grows, and undergoes mitosis to create somatic hyphae.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004822</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAO:0001051</oboInOwl:id>
@@ -2437,7 +2561,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001051"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A germ tube is an outgrowth produced by certain species of spore-releasing fungi (sporangia) during germination. The germ tube differentiates, grows, and develops by mitosis to create a somatic hyphae.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outgrowth produced by germinating spores in certain species of spore-releasing fungi. The germ tube differentiates, grows, and undergoes mitosis to create somatic hyphae.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004822</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2447,7 +2571,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0001052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mushroom develops from a nodule, or pinhead, less than two millimeters in diameter, called a primordium, which is typically found on or near the surface of the substrate. It is formed within the mycelium, the mass of threadlike hyphae that make up the fungus. The primordium enlarges into a roundish structure of interwoven hyphae roughly resembling an egg, called a button.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The nodule from which a mushroom develops. The primordium, less than two millimeters in diameter, resembles a pinhead, and is typically found on or near the surface of the substrate. It is formed within the mycelium, the mass of threadlike hyphae that make up the fungus. The primordium enlarges into a roundish structure of interwoven hyphae roughly resembling an egg, called a button.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0005533</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal_anatomy_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primordium</oboInOwl:hasRelatedSynonym>
@@ -2463,7 +2587,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FAO_0001052"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mushroom develops from a nodule, or pinhead, less than two millimeters in diameter, called a primordium, which is typically found on or near the surface of the substrate. It is formed within the mycelium, the mass of threadlike hyphae that make up the fungus. The primordium enlarges into a roundish structure of interwoven hyphae roughly resembling an egg, called a button.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The nodule from which a mushroom develops. The primordium, less than two millimeters in diameter, resembles a pinhead, and is typically found on or near the surface of the substrate. It is formed within the mycelium, the mass of threadlike hyphae that make up the fungus. The primordium enlarges into a roundish structure of interwoven hyphae roughly resembling an egg, called a button.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0005533</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
