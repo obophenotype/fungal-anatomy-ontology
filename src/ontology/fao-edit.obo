@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:05:2019 15:11
+date: 23:01:2020 15:01
 saved-by: midori
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: fungal_anatomy_ontology
@@ -55,7 +55,7 @@ relationship: part_of FAO:0000012 ! basidiocarp
 id: FAO:0000007
 name: fruitbody
 def: "Any specialized structure which bears or contains sexually or asexually derived spores." [FAO:curators, SGD:clt]
-synonym: "fruiting body" RELATED []
+synonym: "fruiting body" EXACT []
 xref: BTO:0000487
 is_a: FAO:0002004 ! multicellular fungal structure, multicellular organism
 
@@ -165,7 +165,7 @@ relationship: part_of FAO:0000003 ! basidium
 [Term]
 id: FAO:0000022
 name: teliospore
-def: "A diploid spore with a thick, pigmented, sculpted cell wall, and extracellular peptidoglycan spikes that is formed during growth in a plant host by some Basidiomycete species, including pathogenic smut (Ustilaginales) and rust (Pucciniales) fungi." [FAO:mah, PMID:8898211, PMID:27888605, SGD:clt]
+def: "A diploid spore with a thick, pigmented, sculpted cell wall, and extracellular peptidoglycan spikes that is formed during growth in a plant host by some Basidiomycete species, including pathogenic smut (Ustilaginales) and rust (Pucciniales) fungi." [FAO:mah, PMID:27888605, PMID:8898211, SGD:clt]
 is_a: FAO:0000021 ! basidiospore
 
 [Term]
@@ -191,7 +191,7 @@ is_a: FAO:0000024 ! conidium
 [Term]
 id: FAO:0000026
 name: urediniospore
-def: "A thin-walled spore that is formed in a uredinium and is the primary dispersal mode for rust-causing Basidiomycete fungi." [FAO:mah, PMID:30206343, PMID:26731728, PMID:21642346, SGD:clt]
+def: "A thin-walled spore that is formed in a uredinium and is the primary dispersal mode for rust-causing Basidiomycete fungi." [FAO:mah, PMID:21642346, PMID:26731728, PMID:30206343, SGD:clt]
 synonym: "urediospore" EXACT [FAO:mah]
 synonym: "uredospore" EXACT [FAO:mah]
 is_a: FAO:0000021 ! basidiospore
@@ -248,7 +248,7 @@ is_a: FAO:0000024 ! conidium
 [Term]
 id: FAO:0000034
 name: lichen thallus
-def: "A composite structure that forms the vegetative portion of a lichen; minimally composed of at least one fungal species (the mycobiont) and an alga or cyanobacterium (the photobiont)." [ISBN:0471940526, SGD:clt, https://www.britishlichensociety.org.uk/about-lichens/what-is-a-lichen, https://www.livescience.com/55008-lichens.html]
+def: "A composite structure that forms the vegetative portion of a lichen; minimally composed of at least one fungal species (the mycobiont) and an alga or cyanobacterium (the photobiont)." [https://www.britishlichensociety.org.uk/about-lichens/what-is-a-lichen, https://www.livescience.com/55008-lichens.html, ISBN:0471940526, SGD:clt]
 is_a: FAO:0000002 ! composite structure
 
 [Term]
@@ -348,7 +348,7 @@ is_a: FAO:0000008 ! ascocarp
 id: FAO:0000048
 name: Hulle cell
 def: "A specialized multinucleate cell that originates from a nest-like aggregation of hyphae during sexual development. Hulle cells serve as nurse cells to the developing cleistothecium." [AspGD:mcc, PMID:19210625]
-comment: Note that \"Hulle\" is properly written with an umlaut on the \"u\".
+comment: Note that "Hulle" is properly written with an umlaut on the "u".
 is_a: FAO:0000001 ! fungal structure
 relationship: develops_from FAO:0001001 ! hypha
 
@@ -494,7 +494,7 @@ creation_date: 2013-04-03T11:18:18Z
 [Term]
 id: FAO:0000065
 name: dikaryon
-def: "A binucleate cell observed in some fungi that forms when two compatible nuclei, each originating from one of the cells, pair off after plasmogamy and cohabit without karyogamy within a hyphal compartment. The nuclei divide synchronously and are passed in pairs to newer cells or hyphal tips, which are also binucleate." [CGD:doi, http://en.wikipedia.org/wiki/Dikaryon, FAO:mah]
+def: "A binucleate cell observed in some fungi that forms when two compatible nuclei, each originating from one of the cells, pair off after plasmogamy and cohabit without karyogamy within a hyphal compartment. The nuclei divide synchronously and are passed in pairs to newer cells or hyphal tips, which are also binucleate." [CGD:doi, FAO:mah, http://en.wikipedia.org/wiki/Dikaryon]
 is_a: FAO:0002004 ! multicellular fungal structure, multicellular organism
 relationship: part_of FAO:0001001 ! hypha
 created_by: mariacostanzo
@@ -512,7 +512,7 @@ creation_date: 2013-04-03T11:21:38Z
 [Term]
 id: FAO:0000067
 name: chlamydospore
-def: "A large, thick-walled resting spore with condensed cytoplasm, formed within hyphae or at hyphal tips in several kinds of fungi." [FAO:mah, 16215181, CGD:doi]
+def: "A large, thick-walled resting spore with condensed cytoplasm, formed within hyphae or at hyphal tips in several kinds of fungi." [:16215181, CGD:doi, FAO:mah]
 is_a: FAO:0000023 ! asexual spore
 created_by: mariacostanzo
 creation_date: 2013-04-03T11:41:14Z
@@ -810,6 +810,19 @@ def: "A modified hypha that forms a specialized structure used by a fungus to pe
 is_a: FAO:0001001 ! hypha
 created_by: midori
 creation_date: 2020-01-10T14:43:59Z
+
+[Term]
+id: FAO:0002006
+name: monokaryotic fruitbody
+def: "A spore-producing structure that is formed following same-sex (self) mating. These structures are produced by Cryptococcus species in a manner similar to sexual mating except that the resulting spores are isogenic with the parental strain." [FAO:doi]
+synonym: "haploid fruit body" EXACT []
+synonym: "haploid fruitbody" EXACT []
+synonym: "haploid fruiting body" EXACT []
+synonym: "monokaryotic fruit body" EXACT [FAO:doi]
+synonym: "monokaryotic fruiting body" EXACT [FAO:doi]
+is_a: FAO:0000010 ! sporophore
+created_by: midori
+creation_date: 2020-01-23T14:04:34Z
 
 [Typedef]
 id: develops_from
