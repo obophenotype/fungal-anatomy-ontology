@@ -815,14 +815,23 @@ creation_date: 2020-01-10T14:43:59Z
 id: FAO:0002006
 name: monokaryotic fruitbody
 def: "A spore-producing structure that is formed following same-sex (self) mating. These structures are produced by Cryptococcus species in a manner similar to sexual mating except that the resulting spores are isogenic with the parental strain." [FAO:doi]
-synonym: "haploid fruit body" EXACT []
-synonym: "haploid fruitbody" EXACT []
-synonym: "haploid fruiting body" EXACT []
+synonym: "haploid fruit body" EXACT [FAO:doi]
+synonym: "haploid fruitbody" EXACT [FAO:doi]
+synonym: "haploid fruiting body" EXACT [FAO:doi]
 synonym: "monokaryotic fruit body" EXACT [FAO:doi]
 synonym: "monokaryotic fruiting body" EXACT [FAO:doi]
 is_a: FAO:0000010 ! sporophore
 created_by: midori
 creation_date: 2020-01-23T14:04:34Z
+
+[Term]
+id: FAO:0002007
+name: conidiophore foot cell
+def: "A specialized cell with an enlarged cell wall that develops from a hyphal cell in a septate mycelium and swells at the aerial terminus to form a conidiophore vesicle. The aerial portion of the foot cell forms the conidiophore stalk." [FAO:doi]
+is_a: FAO:0001004 ! septate hypha in mycelium
+relationship: develops_from FAO:0000032 ! vegetative cell
+created_by: midori
+creation_date: 2020-01-23T15:25:29Z
 
 [Typedef]
 id: develops_from
