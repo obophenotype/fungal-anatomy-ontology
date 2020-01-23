@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:01:2020 16:02
+date: 23:01:2020 16:19
 saved-by: midori
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: fungal_anatomy_ontology
@@ -512,7 +512,7 @@ creation_date: 2013-04-03T11:21:38Z
 [Term]
 id: FAO:0000067
 name: chlamydospore
-def: "A large, thick-walled resting spore with condensed cytoplasm, formed within hyphae or at hyphal tips in several kinds of fungi." [:16215181, CGD:doi, FAO:mah]
+def: "A large, thick-walled resting spore with condensed cytoplasm, formed within hyphae or at hyphal tips in several kinds of fungi." [PMID:16215181, CGD:doi, FAO:mah]
 is_a: FAO:0000023 ! asexual spore
 created_by: mariacostanzo
 creation_date: 2013-04-03T11:41:14Z
@@ -840,6 +840,14 @@ def: "A short, thin, unbranched tubular structure that emerges from a conidium a
 is_a: FAO:0000001 ! fungal structure
 created_by: midori
 creation_date: 2020-01-23T15:57:41Z
+
+[Term]
+id: FAO:0002009
+name: spherule
+def: "A  large, round, thick-walled structure that contains endospores such as those produced by Coccidioides species within a host." [FAO:doi]
+is_a: FAO:0000052 ! sporangium
+created_by: midori
+creation_date: 2020-01-23T16:18:39Z
 
 [Typedef]
 id: develops_from
