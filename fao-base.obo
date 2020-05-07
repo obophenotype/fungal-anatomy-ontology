@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2020-01-23/fao/fao-base.owl
+data-version: releases/2020-05-07/fao/fao-base.owl
 date: 23:01:2020 16:30
 saved-by: midori
 auto-generated-by: OBO-Edit 2.3.1
@@ -349,7 +349,7 @@ id: FAO:0000048
 name: Hulle cell
 def: "A specialized multinucleate cell that originates from a nest-like aggregation of hyphae during sexual development. Hulle cells serve as nurse cells to the developing cleistothecium." [AspGD:mcc, PMID:19210625]
 comment: Note that "Hulle" is properly written with an umlaut on the "u".
-is_a: FAO:0000001 ! fungal structure
+is_a: FAO:0000018 ! unicellular structure
 relationship: develops_from FAO:0001001 ! hypha
 
 [Term]
@@ -452,7 +452,8 @@ creation_date: 2013-04-02T03:23:27Z
 id: FAO:0000060
 name: clamp cell
 def: "A hyphal cell that forms a clamp connection, a structure that separates differing nuclei, which have been obtained through mating of hyphae of differing sexual types, into distinct hyphal segments that are separated by septa (cross walls)." [CGD:doi]
-is_a: FAO:0001009 ! septate hypha
+is_a: FAO:0000018 ! unicellular structure
+relationship: part_of FAO:0001009 ! septate hypha
 created_by: mariacostanzo
 creation_date: 2013-04-02T03:28:00Z
 
@@ -460,8 +461,7 @@ creation_date: 2013-04-02T03:28:00Z
 id: FAO:0000061
 name: fused clamp
 def: "A structure produced in a dikaryotic hypha upon migration of the nuclei after mating of hyphae of differing sexual types.  The clamp fuses to compartmentalize a nucleus within the subapical cell.  Note: A hyphal cell that forms a clamp connection is called a \"clamp cell\"." [CGD:doi]
-is_a: FAO:0000001 ! fungal structure
-relationship: part_of FAO:0000060 ! clamp cell
+is_a: FAO:0001009 ! septate hypha
 created_by: mariacostanzo
 creation_date: 2013-04-02T03:29:16Z
 
@@ -469,8 +469,7 @@ creation_date: 2013-04-02T03:29:16Z
 id: FAO:0000062
 name: unfused clamp
 def: "A structure that separates the nuclei within monokaryotic hyphae into distinct hyphal segments. Monokaryotic hyphae are produced during unisexual reproduction or hyphal development of a diploid, in contrast to dikaryotic hyphae which are produced by mating of hyphae of differing sexual types." [CGD:doi]
-is_a: FAO:0000001 ! fungal structure
-relationship: part_of FAO:0000060 ! clamp cell
+is_a: FAO:0001009 ! septate hypha
 created_by: mariacostanzo
 creation_date: 2013-04-02T03:31:28Z
 
@@ -828,8 +827,9 @@ creation_date: 2020-01-23T14:04:34Z
 id: FAO:0002007
 name: conidiophore foot cell
 def: "A specialized cell with an enlarged cell wall that develops from a hyphal cell in a septate mycelium and swells at the aerial terminus to form a conidiophore vesicle. The aerial portion of the foot cell forms the conidiophore stalk." [FAO:doi]
-is_a: FAO:0001004 ! septate hypha in mycelium
+is_a: FAO:0000018 ! unicellular structure
 relationship: develops_from FAO:0000032 ! vegetative cell
+relationship: part_of FAO:0001004 ! septate hypha in mycelium
 created_by: midori
 creation_date: 2020-01-23T15:25:29Z
 

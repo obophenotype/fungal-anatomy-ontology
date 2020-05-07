@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fao.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fao/releases/2020-01-23/fao/fao-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fao/releases/2020-05-07/fao/fao-base.owl"/>
         <oboInOwl:NamespaceIdRule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">* FAO:$sequence(7,0000001,9999999)$</oboInOwl:NamespaceIdRule>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23:01:2020 16:30</oboInOwl:date>
@@ -1317,7 +1317,7 @@
     <!-- http://purl.obolibrary.org/obo/FAO_0000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -1597,7 +1597,13 @@
     <!-- http://purl.obolibrary.org/obo/FAO_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hyphal cell that forms a clamp connection, a structure that separates differing nuclei, which have been obtained through mating of hyphae of differing sexual types, into distinct hyphal segments that are separated by septa (cross walls).</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-02T03:28:00Z</oboInOwl:creation_date>
@@ -1617,13 +1623,7 @@
     <!-- http://purl.obolibrary.org/obo/FAO_0000061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure produced in a dikaryotic hypha upon migration of the nuclei after mating of hyphae of differing sexual types.  The clamp fuses to compartmentalize a nucleus within the subapical cell.  Note: A hyphal cell that forms a clamp connection is called a &quot;clamp cell&quot;.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-02T03:29:16Z</oboInOwl:creation_date>
@@ -1643,13 +1643,7 @@
     <!-- http://purl.obolibrary.org/obo/FAO_0000062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0000062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure that separates the nuclei within monokaryotic hyphae into distinct hyphal segments. Monokaryotic hyphae are produced during unisexual reproduction or hyphal development of a diploid, in contrast to dikaryotic hyphae which are produced by mating of hyphae of differing sexual types.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-02T03:31:28Z</oboInOwl:creation_date>
@@ -2805,7 +2799,13 @@
     <!-- http://purl.obolibrary.org/obo/FAO_0002007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FAO_0002007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0001004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FAO_0000018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FAO_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
