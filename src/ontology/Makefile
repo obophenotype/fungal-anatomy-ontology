@@ -118,7 +118,7 @@ VCHECKS = equivalent-classes trailing-whitespace owldef-self-reference xref-synt
 # run all violation checks
 VQUERIES = $(foreach V,$(VCHECKS),$(SPARQLDIR)/$V-violation.sparql)
 sparql_test: $(SRC)
-	robot verify -i $< --queries $(VQUERIES) -O reports/
+	$(ROBOT) verify -i $< --queries $(VQUERIES) -O reports/
 
 # ----------------------------------------
 # Sparql queries: Reports

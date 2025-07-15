@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2020-05-07/fao/fao-base.owl
+data-version: releases/2025-07-15/fao/fao-base.owl
 date: 23:01:2020 16:30
 saved-by: midori
 auto-generated-by: OBO-Edit 2.3.1
@@ -14,6 +14,7 @@ name: fungal structure
 def: "An anatomical structure that forms all or part of a fungus." [FAO:mah]
 synonym: "fungal structure ontology" RELATED []
 xref: BTO:0001494
+is_a: UBERON:0000061
 relationship: only_in_taxon NCBITaxon:4751
 
 [Term]
