@@ -14,6 +14,7 @@ name: fungal structure
 def: "An anatomical structure that forms all or part of a fungus." [FAO:mah]
 synonym: "fungal structure ontology" RELATED []
 xref: BTO:0001494
+is_a: UBERON:0000061 ! anatomical structure
 relationship: only_in_taxon NCBITaxon:4751 ! Fungi
 
 [Term]
